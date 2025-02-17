@@ -1,0 +1,8 @@
+#HealthBar {
+    --unity-progress-bar-background-color: black; /* Background */
+    --unity-progress-bar-border-color: white;    /* Border */
+}
+
+#HealthBar .unity-progress-bar__fill {
+    background-color: green; /* Default fill color */
+}
