@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
@@ -11,6 +12,9 @@ public class EnemyController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
     public float flashDuration = 1.0f;
+    public List<GameObject> weaponDrops;
+    public float dropChance = 0.2f;
+    public Transform dropPosition;
     private Animator animator;
     private bool isDead = false;
     
@@ -35,12 +39,19 @@ public class EnemyController : MonoBehaviour
     }
 
     void Die(){
+        if (weaponDrops.Count > 0 && Random.value < dropChance){
+            DropWeapon();
+        }
         isDead = true;
         rb.linearVelocity = Vector2.zero;
         animator.SetBool("EnemyDeath", true); // Trigger death animation
         StartCoroutine(DestroyAfterDeathAnimation());
         GameManager.Instance.AddScore(15);
-        // Destroy(gameObject);
+        Destroy(gameObject);
+    }
+    void DropWeapon(){
+        int randomIndex = Random.Range(0, weaponDrops.Count);
+        Instantiate(weaponDrops[randomIndex], dropPosition.position, Quaternion.identity);
     }
 
     private IEnumerator DestroyAfterDeathAnimation(){

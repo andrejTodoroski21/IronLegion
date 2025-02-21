@@ -137,6 +137,13 @@ MonoBehaviour:
   damageAmount: 10
   enemyHealth: 20
   flashDuration: 0.1
+  weaponDrops:
+  - {fileID: 7831837135217219885, guid: cda34a43491394793a71137947ce5981, type: 3}
+  - {fileID: 6422150313236600238, guid: b7f32de9c18154388903a497971a248f, type: 3}
+  - {fileID: 3113587962136654048, guid: f58d5c940371440bf97d88fc61cd3902, type: 3}
+  - {fileID: 6557308368645779754, guid: fc8f3d18fa1b94cbd9e4b158d7ffc848, type: 3}
+  dropChance: 0.1
+  dropPosition: {fileID: 5309486394489663635}
 --- !u!61 &-3812360393849949336
 BoxCollider2D:
   m_ObjectHideFlags: 0
