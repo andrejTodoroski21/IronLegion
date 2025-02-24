@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 177103721684541239}
   - component: {fileID: 2715605420894740712}
   - component: {fileID: 2722313577172417518}
+  - component: {fileID: 3303407262919997877}
   m_Layer: 0
   m_Name: SMG
   m_TagString: Untagged
@@ -138,3 +139,24 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &3303407262919997877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7831837135217219885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bd361981f8284173a4c4b4ebd42a06f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunName: SMG
+  fireRate: 30
+  damage: 8
+  bulletPrefab: {fileID: 1049336039496333304, guid: c9198d16ec21842ebbc091d0e0132f8d,
+    type: 3}
+  firePoint: {fileID: 0}
+  ammoCount: 120
+  bulletSpread: 0
+  canShoot: 1

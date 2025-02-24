@@ -47,7 +47,6 @@ public class EnemyController : MonoBehaviour
         animator.SetBool("EnemyDeath", true); // Trigger death animation
         StartCoroutine(DestroyAfterDeathAnimation());
         GameManager.Instance.AddScore(15);
-        Destroy(gameObject);
     }
     void DropWeapon(){
         int randomIndex = Random.Range(0, weaponDrops.Count);

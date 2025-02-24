@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1586246252279732703}
   - component: {fileID: -7934860588478685766}
   - component: {fileID: 9191376517000737512}
+  - component: {fileID: 6931095071800304367}
   m_Layer: 0
   m_Name: FullautoAR
   m_TagString: Untagged
@@ -138,3 +139,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponData: {fileID: 0}
+--- !u!114 &6931095071800304367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3113587962136654048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f8d13f03eb9c4aaeb8a84d3524bb8f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunName: AR
+  fireRate: 10
+  damage: 12
+  bulletPrefab: {fileID: 1049336039496333304, guid: c9198d16ec21842ebbc091d0e0132f8d,
+    type: 3}
+  firePoint: {fileID: 0}
+  ammoCount: 0
+  bulletSpread: 0
+  canShoot: 1

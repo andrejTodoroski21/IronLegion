@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5618372129874941339}
   - component: {fileID: 363237020522333422}
   - component: {fileID: -4121603292641838404}
+  - component: {fileID: 1697693449707280097}
   m_Layer: 0
   m_Name: BurstAR
   m_TagString: Untagged
@@ -138,3 +139,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponData: {fileID: 0}
+--- !u!114 &1697693449707280097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6557308368645779754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaabdfd54396342fe9deaba236b7d364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunName: BurstR
+  fireRate: 10
+  damage: 12
+  bulletPrefab: {fileID: 1049336039496333304, guid: c9198d16ec21842ebbc091d0e0132f8d,
+    type: 3}
+  firePoint: {fileID: 0}
+  ammoCount: 120
+  bulletSpread: 0
+  canShoot: 1
+  burstCount: 3
+  burstDelay: 0.2

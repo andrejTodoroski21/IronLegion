@@ -10,8 +10,8 @@ public class Gun : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
     public int ammoCount;
-    public float bulletSpeed = 0f;
-    private bool canShoot = true;
+    public float bulletSpread = 0f;
+    public bool canShoot = true;
 
     public virtual void Shoot(){
         if(canShoot && ammoCount > 0){

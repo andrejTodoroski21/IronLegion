@@ -12,10 +12,4 @@ public class WeaponSpawner : MonoBehaviour
     void SpawnWeapon(){
         Instantiate(weaponPrefab, transform.position, Quaternion.identity);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
