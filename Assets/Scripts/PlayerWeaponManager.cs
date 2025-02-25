@@ -14,7 +14,7 @@ public class PlayerWeaponManager : MonoBehaviour
 
     void EquipWeapon(Weapon newWeaponData){
         if(currentWeaponObject != null){
-            
+
             Destroy(currentWeaponObject);
 
         }
@@ -40,6 +40,11 @@ public class PlayerWeaponManager : MonoBehaviour
         }
     }
     public void PickUpWeapon(Weapon newWeaponData){
+        if (newWeaponData == null)
+    {
+        Debug.LogError("Picked up weapon has no weapon data assigned!");
+        return;
+    }
         EquipWeapon(newWeaponData);
     }
 

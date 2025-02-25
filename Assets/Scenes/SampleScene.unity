@@ -136665,7 +136665,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 1747929938979054952, guid: 403f7f22ded1d4e478c3e51fb745283f,
     type: 3}
   player: {fileID: 1889388380}
-  spawnRate: 1
+  spawnRate: 10
   spawnRadius: 8
 --- !u!4 &1667876349
 Transform:
@@ -136865,12 +136865,13 @@ GameObject:
   - component: {fileID: 1889388377}
   - component: {fileID: 1889388382}
   - component: {fileID: 1889388384}
+  - component: {fileID: 1889388387}
+  - component: {fileID: 1889388388}
+  - component: {fileID: 1889388386}
   - component: {fileID: 1889388379}
   - component: {fileID: 1889388378}
   - component: {fileID: 1889388385}
   - component: {fileID: 1889388383}
-  - component: {fileID: 1889388386}
-  - component: {fileID: 1889388387}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -137106,6 +137107,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultWeaponData: {fileID: 0}
   weaponHolder: {fileID: 1599336616}
+--- !u!114 &1889388388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889388376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddfb179af45434e83819b4f013bbedcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponData: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
